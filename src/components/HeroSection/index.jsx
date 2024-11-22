@@ -18,11 +18,12 @@ const Container = styled.div`
     height: 100vh;
     margin-top: 50px;
     padding: 2% 7%;
+    /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+    color: #fff;
 
-    @media(max-width: 1023px) {
-      
+    @media (max-width: 1023px) {
+      /* padding: 5%; */
     }
-    
 `
 
 const GridContainer = styled.div`
@@ -46,24 +47,24 @@ const GridItem1 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%; /* Para ocupar o espaço total da célula */
-  width: 100%;
-  gap: 30px;
+  gap: 20px;
 
   h2 {
-    text-align: center;
-    font-size: ${(props) => props.theme.font.bigger};
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: ${(props) => props.theme.color.primary || "#fff"};
+    text-align: left;
   }
 
   p {
-    text-align: justify;
-    font-size: ${(props) => props.theme.font.default};
-    color: ${(props) => props.theme.color.secundary};
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: ${(props) => props.theme.color.secundary || "#d4d4d4"};
+    text-align: left;
   }
-
-
-    
-  ul {
+   
+  /* ul {
       background-color: #1b1b1b;
       height: 50px;
       display: flex;
@@ -71,7 +72,7 @@ const GridItem1 = styled.div`
       justify-content: space-around;
       align-items: center;
          
-  }
+  } */
   @media(max-width: 1023px) {
     h2 {
     font-size: 1.5rem;
@@ -81,16 +82,16 @@ const GridItem1 = styled.div`
 `
 
 const GridItem2 = styled.div`
-  grid-column: 2;
+   img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: ${slideIn} 1.2s ease-out;
 
-  img {
-    /* width: 600px; */
-    margin-left: 50px;
-    animation: ${slideIn} 1s ease-out;
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;  */
-    &:hover{
-      transform: scale(1.02); 
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
     }
   }
 
@@ -99,11 +100,38 @@ const GridItem2 = styled.div`
     text-align: center;
     img {
       margin-left: 0;
-      width: 50%;
+      width: 80%;
     }
   }
 
 `
+
+const SocialLinks = styled.ul`
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: #ffffff33;
+      color: #fff;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: ${(props) => props.theme.color.secundary || "#fff"};
+      }
+    }
+  }
+`;
+
 
 const HeroSection = () => {
   return (
@@ -112,22 +140,34 @@ const HeroSection = () => {
         <GridItem1>
           <h2>Assessoria e Consultoria Jurídica</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
           </p>
 
-          <ul>
-            <li><MdOutlineEmail size={32} /></li>
-            <li><FaInstagram size={32} /></li>
-            <li><FaLinkedinIn size={32} /></li>
-          </ul>
-
+          <SocialLinks>
+            <li>
+              <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+                <MdOutlineEmail size={24} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <FaInstagram size={24} />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn size={24} />
+              </a>
+            </li>
+          </SocialLinks>
         </GridItem1>
+
         <GridItem2>
-          <img src="src/assets/images/hero-banner.png" />
+          <img src="src/assets/images/hero-banner.png" alt="Hero Banner" />
         </GridItem2>
       </GridContainer>
     </Container>
-  )
-}
+  );
+};
 
 export default HeroSection
