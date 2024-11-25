@@ -23,6 +23,7 @@ const Container = styled.div`
 
     @media (max-width: 1023px) {
       /* padding: 5%; */
+      margin-top: 0;
     }
 `
 
@@ -37,9 +38,11 @@ const GridContainer = styled.div`
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column-reverse;
-    gap: 20px;
+    /* gap: 20px; */
+    margin-top: 120px;
 
   }
+
 `
 
 const GridItem1 = styled.div`
@@ -99,8 +102,9 @@ const GridItem2 = styled.div`
     grid-column: 1;
     text-align: center;
     img {
+      margin-top: 30px;
       margin-left: 0;
-      width: 80%;
+      width: 70%;
     }
   }
 
@@ -140,7 +144,7 @@ const HeroSection = () => {
         <GridItem1>
           <h2>Assessoria e Consultoria Jurídica</h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            Oferecemos soluções jurídicas personalizadas e estratégicas para empresas e indivíduos. Com anos de experiência, nossa equipe está preparada para atuar em diversas áreas do Direito, garantindo segurança jurídica, agilidade e excelência no atendimento.
           </p>
 
           <SocialLinks>

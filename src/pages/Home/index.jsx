@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import HeroSection from "../../components/HeroSection"
 import Section from "../../components/Section"
+import Card from "../../components/Card";
 
 // const Teste = styled.div`
 //   background-color: #fff;
@@ -23,6 +24,8 @@ const Home = () => {
       <HeroSection />
       <Divider />
       <Section />
+      <Divider />
+      <Card />
     </>
   )
 }

@@ -9,18 +9,32 @@ const Container = styled.section`
     "title content"
     "images images"; /* Imagens ocupam toda a largura */
   gap: 20px; /* Espaçamento entre os elementos */
+
+  @media(max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Title = styled.h3`
   grid-area: title;
-  font-size: ${(props) => props.theme.font.big};
-  text-decoration: underline;
+  font-size: ${(props) => props.theme.font.bigger};
+
   
 `;
 
 const ContentContainer = styled.div`
   grid-area: content;
   width: 100%;
+  @media(max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 `;
 
 const Content = styled.p`
@@ -64,11 +78,21 @@ const PerfilContainer = styled.div`
   align-items: center; /* Centraliza verticalmente */
   gap: 20px; /* Espaçamento entre as imagens */
   margin-top: 30px;
+
+  @media(max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const Perfil = styled.img`
   width: 20%; /* Reduz o tamanho das imagens */
-`;
+  @media(max-width: 1023px) {
+    width: 50%;
+  }
+  `;
 
 const Section = () => {
   return (
