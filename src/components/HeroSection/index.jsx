@@ -169,7 +169,7 @@ const HeroSection = () => {
         </GridItem1>
 
         <GridItem2>
-          <img src="src/assets/images/hero-banner.png" alt="Hero Banner" />
+          <img src="src/assets/hero-banner.png" alt="Hero Banner" />
         </GridItem2>
       </GridContainer>
     </Container>

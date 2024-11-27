@@ -113,8 +113,8 @@ const Section = () => {
         <StyledButton>Saiba mais</StyledButton>
       </ContentContainer>
       <PerfilContainer>
-        <Perfil src="src/assets/images/vitor-removebg-preview.png" />
-        <Perfil src="src/assets/images/vitor-removebg-preview.png" />
+        <Perfil src="src/assets/vitor-removebg-preview.png" />
+        <Perfil src="src/assets/vitor-removebg-preview.png" />
       </PerfilContainer>
     </Container>
   );

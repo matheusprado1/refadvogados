@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import logoDesktop from '../../assets/logo/logo-desktop.png';
-import logoMobile from '../../assets/logo/logo-mobile.png';
+import logoDesktop from '../../assets/logo-desktop.png'
+import logoMobile from '../../assets/logo-mobile.png';
 
 const StyledImg = styled.img`
   max-height: 100px;
