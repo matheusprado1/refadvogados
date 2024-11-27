@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import perfil from "../../assets/vitor-perfil.png"
 
 const Container = styled.section`
   padding: 2% 7%;
@@ -113,8 +114,8 @@ const Section = () => {
         <StyledButton>Saiba mais</StyledButton>
       </ContentContainer>
       <PerfilContainer>
-        <Perfil src="src/assets/vitor-removebg-preview.png" />
-        <Perfil src="src/assets/vitor-removebg-preview.png" />
+        <Perfil src={perfil} alt={"perfil"} />
+        <Perfil src={perfil} alt={"perfil"} />
       </PerfilContainer>
     </Container>
   );

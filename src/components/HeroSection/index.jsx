@@ -1,7 +1,8 @@
 import styled, { keyframes } from "styled-components"
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md"
+import heroBanner from "../../assets/hero-banner.png"
 
 const slideIn = keyframes`
   from {
@@ -169,7 +170,7 @@ const HeroSection = () => {
         </GridItem1>
 
         <GridItem2>
-          <img src="src/assets/hero-banner.png" alt="Hero Banner" />
+          <img src={heroBanner} alt="Hero Banner" />
         </GridItem2>
       </GridContainer>
     </Container>
