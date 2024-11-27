@@ -23,7 +23,8 @@ const Container = styled.div`
 
     @media (max-width: 1023px) {
       /* padding: 5%; */
-      margin-top: 0;
+      /* margin-top: 0; */
+      height: auto;
     }
 `
 
@@ -99,13 +100,14 @@ const GridItem2 = styled.div`
   }
 
   @media(max-width: 1023px) {
-    grid-column: 1;
+    /* grid-column: 1;
     text-align: center;
     img {
       margin-top: 30px;
       margin-left: 0;
       width: 70%;
-    }
+    } */
+      display: none;
   }
 
 `
