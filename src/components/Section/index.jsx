@@ -1,5 +1,8 @@
 import styled from "styled-components"
 import perfil from "../../assets/vitor-perfil.png"
+import { FaInstagram } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
+import { MdOutlineEmail } from "react-icons/md"
 
 const Container = styled.section`
   padding: 2% 7%;
@@ -10,6 +13,7 @@ const Container = styled.section`
     "title content"
     "images images"; /* Imagens ocupam toda a largura */
   gap: 20px; /* Espaçamento entre os elementos */
+  line-height: 1.8;
 
   @media(max-width: 1023px) {
     display: flex;
@@ -76,9 +80,34 @@ const PerfilContainer = styled.div`
   grid-area: images;
   display: flex;
   justify-content: space-around;
-  align-items: center; /* Centraliza verticalmente */
+ /* Centraliza verticalmente */
   gap: 20px; /* Espaçamento entre as imagens */
   margin-top: 30px;
+
+  img {
+    width: 75%;
+
+    @media(max-width: 1023px) {
+      width: 60%;
+    }
+  }
+
+ div {
+    margin-top: 20px;
+    width: 30%;
+
+    @media(max-width: 1023px) {
+      width: 80%;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  strong {
+    color: ${(props) => props.theme.color.secundary};
+  }
 
   @media(max-width: 1023px) {
     display: flex;
@@ -86,14 +115,20 @@ const PerfilContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
+
+ 
 `;
 
-const Perfil = styled.img`
-  width: 20%; /* Reduz o tamanho das imagens */
-  @media(max-width: 1023px) {
-    width: 50%;
+const SocialLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  a {
+    cursor: pointer;
   }
-  `;
+
+`
 
 const Section = () => {
   return (
@@ -114,8 +149,30 @@ const Section = () => {
         <StyledButton>Saiba mais</StyledButton>
       </ContentContainer>
       <PerfilContainer>
-        <Perfil src={perfil} alt={"perfil"} />
-        <Perfil src={perfil} alt={"perfil"} />
+        <div>
+          <img src={perfil} alt={"perfil"} />
+          <h3>Pedro <strong>Resende</strong></h3>
+          <p>Advogado | OAB [número da OAB]
+            Especialista em Direito Empresarial,
+            Contratos e Soluções Jurídicas para Pequenas e Médias Empresas</p>
+          <SocialLinks>
+            <a><MdOutlineEmail size={24} /></a>
+            <a><FaInstagram size={24} /></a>
+            <a><FaLinkedinIn size={24} /></a>
+          </SocialLinks>
+        </div>
+        <div>
+          <img src={perfil} alt={"perfil"} />
+          <h3>Vitor <strong>Fernandes</strong></h3>
+          <p>Advogado | OAB [número da OAB]
+            Especialista em Direito Empresarial,
+            Contratos e Soluções Jurídicas para Pequenas e Médias Empresas</p>
+          <SocialLinks>
+            <a><MdOutlineEmail size={24} /></a>
+            <a><FaInstagram size={24} /></a>
+            <a><FaLinkedinIn size={24} /></a>
+          </SocialLinks>
+        </div>
       </PerfilContainer>
     </Container>
   );
