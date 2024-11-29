@@ -3,6 +3,7 @@ import HeroSection from "../../components/HeroSection"
 import Section from "../../components/Section"
 import Card from "../../components/Card";
 import Map from "../../components/Map";
+import ContactForm from "../../components/ContactForm";
 
 // const Teste = styled.div`
 //   background-color: #fff;
@@ -27,6 +28,8 @@ const Home = () => {
       <Section />
       <Divider />
       <Card />
+      <Divider />
+      <ContactForm />
       <Divider />
       <Map />
     </>

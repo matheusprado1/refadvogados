@@ -1,17 +1,48 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import Logo from "../Logo";
 
 const Container = styled.footer`
-  padding: 2% 7%;
   background-color: #1b1b1b;
+  color: ${(props) => props.theme.color.text || "#fff"};
+  text-align: center;
+  padding: 1% 7%;
+  font-size: 0.9rem;
 
-`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: ${(props) => props.theme.color.highlight || "#0077b6"};
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+
 
 const Footer = () => {
   return (
     <Container>
-      Footer
-    </Container>
-  )
-}
+      <div>
+        <p>
+          © {new Date().getFullYear()} Resende e Fernandes sociedade de advogados. Todos os direitos reservados.
+        </p>
+        <p>
+          Feito com ❤️ por{" "}
+          <a href="https://www.linkedin.com/in/matheus-prado-de-oliveira/" target="_blank" rel="noopener noreferrer">
+            Matheus Prado Dev
+          </a>
+        </p>
+      </div>
+      <div>
+        <Logo />
+      </div>
 
-export default Footer
+    </Container>
+  );
+};
+
+export default Footer;
