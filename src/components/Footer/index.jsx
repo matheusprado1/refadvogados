@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import Logo from "../Logo";
+import styled from 'styled-components';
+import Logo from '../Logo';
 
 const Container = styled.footer`
   background-color: #1b1b1b;
-  color: ${(props) => props.theme.color.text || "#fff"};
+  color: ${(props) => props.theme.color.text || '#fff'};
   text-align: center;
   padding: 1% 7%;
   font-size: 0.9rem;
@@ -13,7 +13,7 @@ const Container = styled.footer`
   align-items: center;
 
   a {
-    color: ${(props) => props.theme.color.highlight || "#0077b6"};
+    color: ${(props) => props.theme.color.highlight || '#0077b6'};
     text-decoration: none;
 
     &:hover {
@@ -22,17 +22,21 @@ const Container = styled.footer`
   }
 `;
 
-
 const Footer = () => {
   return (
     <Container>
       <div>
         <p>
-          © {new Date().getFullYear()} Resende e Fernandes sociedade de advogados. Todos os direitos reservados.
+          © {new Date().getFullYear()} Resende e Fernandes sociedade de
+          advogados. Todos os direitos reservados.
         </p>
         <p>
-          Feito com ❤️ por{" "}
-          <a href="https://www.linkedin.com/in/matheus-prado-de-oliveira/" target="_blank" rel="noopener noreferrer">
+          Feito com ❤️ por{' '}
+          <a
+            href="https://www.linkedin.com/in/matheus-prado-de-oliveira/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Matheus Prado Dev
           </a>
         </p>
@@ -40,7 +44,6 @@ const Footer = () => {
       <div>
         <Logo />
       </div>
-
     </Container>
   );
 };

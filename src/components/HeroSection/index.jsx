@@ -1,8 +1,8 @@
-import styled, { keyframes } from "styled-components"
-import { FaInstagram } from "react-icons/fa"
-import { FaLinkedinIn } from "react-icons/fa"
-import { MdOutlineEmail } from "react-icons/md"
-import heroBanner from "../../assets/banner/justice.png"
+import styled, { keyframes } from 'styled-components';
+import { FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
+import { MdOutlineEmail } from 'react-icons/md';
+import heroBanner from '../../assets/banner/justice.png';
 
 const slideIn = keyframes`
   from {
@@ -16,18 +16,18 @@ const slideIn = keyframes`
 `;
 
 const Container = styled.div`
-    height: 100vh;
-    margin-top: 50px;
-    padding: 2% 7%;
-    /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
-    color: #fff;
+  height: 100vh;
+  margin-top: 50px;
+  padding: 2% 7%;
+  /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
+  color: #fff;
 
-    @media (max-width: 1023px) {
-      /* padding: 5%; */
-      /* margin-top: 0; */
-      height: auto;
-    }
-`
+  @media (max-width: 1023px) {
+    /* padding: 5%; */
+    /* margin-top: 0; */
+    height: auto;
+  }
+`;
 
 const GridContainer = styled.div`
   margin-top: 150px;
@@ -35,17 +35,15 @@ const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10%;
-  
-  @media(max-width: 1023px) {
+
+  @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column-reverse;
     /* gap: 20px; */
     margin-top: 120px;
-
   }
-
-`
+`;
 
 const GridItem1 = styled.div`
   grid-column: 1;
@@ -58,17 +56,17 @@ const GridItem1 = styled.div`
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2;
-    color: ${(props) => props.theme.color.primary || "#fff"};
+    color: ${(props) => props.theme.color.primary || '#fff'};
     text-align: left;
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: ${(props) => props.theme.color.secundary || "#d4d4d4"};
+    color: ${(props) => props.theme.color.secundary || '#d4d4d4'};
     text-align: left;
   }
-   
+
   /* ul {
       background-color: #1b1b1b;
       height: 50px;
@@ -78,16 +76,15 @@ const GridItem1 = styled.div`
       align-items: center;
          
   } */
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     h2 {
-    font-size: 1.5rem;
+      font-size: 1.5rem;
     }
   }
-
-`
+`;
 
 const GridItem2 = styled.div`
-   img {
+  img {
     width: 100%;
     max-width: 500px;
     border-radius: 15px;
@@ -100,7 +97,7 @@ const GridItem2 = styled.div`
     }
   }
 
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     /* grid-column: 1;
     text-align: center;
     img {
@@ -108,10 +105,9 @@ const GridItem2 = styled.div`
       margin-left: 0;
       width: 70%;
     } */
-      display: none;
+    display: none;
   }
-
-`
+`;
 
 const SocialLinks = styled.ul`
   display: flex;
@@ -133,12 +129,11 @@ const SocialLinks = styled.ul`
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: ${(props) => props.theme.color.secundary || "#fff"};
+        background-color: ${(props) => props.theme.color.secundary || '#fff'};
       }
     }
   }
 `;
-
 
 const HeroSection = () => {
   return (
@@ -147,22 +142,37 @@ const HeroSection = () => {
         <GridItem1>
           <h2>Assessoria e Consultoria Jurídica</h2>
           <p>
-            Oferecemos soluções jurídicas personalizadas e estratégicas para empresas e indivíduos. Com anos de experiência, nossa equipe está preparada para atuar em diversas áreas do Direito, garantindo segurança jurídica, agilidade e excelência no atendimento.
+            Oferecemos soluções jurídicas personalizadas e estratégicas para
+            empresas e indivíduos. Com anos de experiência, nossa equipe está
+            preparada para atuar em diversas áreas do Direito, garantindo
+            segurança jurídica, agilidade e excelência no atendimento.
           </p>
 
           <SocialLinks>
             <li>
-              <a href="mailto:example@example.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="mailto:example@example.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <MdOutlineEmail size={24} />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram size={24} />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLinkedinIn size={24} />
               </a>
             </li>
@@ -177,4 +187,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection
+export default HeroSection;

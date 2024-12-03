@@ -1,15 +1,15 @@
-import styled from "styled-components";
-import pedro1 from "../../assets/pictures/pedro-sentado.jpg";
-import pedro2 from "../../assets/pictures/pedro-cruzado.jpg";
-import pedro3 from "../../assets/pictures/pedro-frente.jpg";
-import pedro4 from "../../assets/pictures/pedro-frente1.jpg";
+import styled from 'styled-components';
+import pedro1 from '../../assets/pictures/pedro-sentado.jpg';
+import pedro2 from '../../assets/pictures/pedro-cruzado.jpg';
+import pedro3 from '../../assets/pictures/pedro-frente.jpg';
+import pedro4 from '../../assets/pictures/pedro-frente1.jpg';
 
-import vitor1 from "../../assets/pictures/vitor-frente.jpg";
-import vitor2 from "../../assets/pictures/vitor-lado.jpg";
-import vitor3 from "../../assets/pictures/vitor-pc.jpg";
-import vitor4 from "../../assets/pictures/vitor-sentado.jpg";
+import vitor1 from '../../assets/pictures/vitor-frente.jpg';
+import vitor2 from '../../assets/pictures/vitor-lado.jpg';
+import vitor3 from '../../assets/pictures/vitor-pc.jpg';
+import vitor4 from '../../assets/pictures/vitor-sentado.jpg';
 
-import juntos from "../../assets/pictures/lado-lado.jpg";
+import juntos from '../../assets/pictures/lado-lado.jpg';
 
 const Container = styled.section`
   padding: 4% 7%;
@@ -21,7 +21,7 @@ const Title = styled.h1`
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 30px;
-  color: ${(props) => props.theme.color.primary || "#333"};
+  color: ${(props) => props.theme.color.primary || '#333'};
 `;
 
 const PartnerSection = styled.div`
@@ -31,14 +31,14 @@ const PartnerSection = styled.div`
 const PartnerTitle = styled.h2`
   font-size: 2rem;
   margin-bottom: 15px;
-  color: ${(props) => props.theme.color.primary || "#333"};
+  color: ${(props) => props.theme.color.primary || '#333'};
 `;
 
 const Description = styled.p`
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
-  color: ${(props) => props.theme.color.secundary || "#555"};
+  color: ${(props) => props.theme.color.secundary || '#555'};
 `;
 
 const PhotoGrid = styled.div`
@@ -77,8 +77,8 @@ const About = () => {
       <Title>Nosso Escritório</Title>
       <Description>
         Conheça os profissionais que estão à frente do nosso escritório. Com
-        experiência, dedicação e ética, Pedro e Vitor trabalham em sinergia
-        para oferecer a melhor assessoria jurídica.
+        experiência, dedicação e ética, Pedro e Vitor trabalham em sinergia para
+        oferecer a melhor assessoria jurídica.
       </Description>
 
       {/* Seção do Pedro */}

@@ -1,40 +1,40 @@
-import styled from "styled-components"
-import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import { TiThMenu } from "react-icons/ti"
-import { IoCloseSharp } from "react-icons/io5"
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { TiThMenu } from 'react-icons/ti';
+import { IoCloseSharp } from 'react-icons/io5';
 
 const Container = styled.nav`
- display: flex;
- justify-content: center;
- padding: 0;
-
- ul {
   display: flex;
-  list-style: none;
-  align-items: flex-start;
-  padding: 10px;
-  gap: 2rem;
+  justify-content: center;
+  padding: 0;
 
-  flex-direction: ${(props) => (props.isOpen ? "column" : "row")};
- }
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 2rem;
 
- li {
-   list-style-type: none;
- }
+    flex-direction: ${(props) => (props.isOpen ? 'column' : 'row')};
+  }
 
-a {
+  li {
+    list-style-type: none;
+  }
+
+  a {
     color: ${(props) => props.theme.color.primary};
     text-decoration: none;
     cursor: pointer;
     font-weight: 700;
   }
-  :hover{
+  :hover {
     color: ${(props) => props.theme.color.secundary};
     text-decoration: underline;
   }
 
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     display: flex;
     justify-content: flex-end;
     margin-top: 0;
@@ -54,23 +54,22 @@ a {
       padding: 0.5rem;
     }
   }
-`
+`;
 
 const ContentMobile = styled.nav`
   display: none;
 
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     display: flex;
   }
-
-`
+`;
 
 const Menu = () => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
-  }
+  };
 
   const handleResize = () => {
     if (window.innerWidth > 1023 && !menuIsOpen) {
@@ -79,28 +78,42 @@ const Menu = () => {
     if (window.innerWidth < 1023 && menuIsOpen) {
       setMenuIsOpen(false);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [menuIsOpen])
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [menuIsOpen]);
 
   return (
     <Container>
       <ContentMobile onClick={toggleMenu}>
-        {menuIsOpen ? <IoCloseSharp color="white" size="28" /> : <TiThMenu color="white" size="28" />}
+        {menuIsOpen ? (
+          <IoCloseSharp color="white" size="28" />
+        ) : (
+          <TiThMenu color="white" size="28" />
+        )}
       </ContentMobile>
-      {menuIsOpen || window.innerWidth > 1023 ? <ul>
-        <li><Link to="/about">Nosso escritório</Link></li>
-        <li><Link to="#">Especialidades</Link></li>
-        <li><Link to="#">Fale conosco</Link></li>
-      </ul> : <></>}
+      {menuIsOpen || window.innerWidth > 1023 ? (
+        <ul>
+          <li>
+            <Link to="/about">Nosso escritório</Link>
+          </li>
+          <li>
+            <Link to="#">Especialidades</Link>
+          </li>
+          <li>
+            <Link to="#">Fale conosco</Link>
+          </li>
+        </ul>
+      ) : (
+        <></>
+      )}
     </Container>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

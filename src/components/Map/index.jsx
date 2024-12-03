@@ -1,14 +1,13 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 1% 7%;
   display: flex;
   gap: 20%;
-  
+
   h2 {
     font-size: 2rem;
     width: auto;
-
   }
 
   div {
@@ -17,17 +16,16 @@ const Container = styled.section`
     overflow: hidden;
   }
 
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    
 
     div {
       width: 100%;
     }
   }
-`
+`;
 
 const Map = () => {
   return (
@@ -46,7 +44,7 @@ const Map = () => {
         ></iframe>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;

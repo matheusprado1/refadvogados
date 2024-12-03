@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Logo from "../Logo";
-import Menu from "../Menu";
+import styled from 'styled-components';
+import Logo from '../Logo';
+import Menu from '../Menu';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -15,8 +15,10 @@ const StyledHeader = styled.header`
   max-width: 100%;
   padding: 1% 7%;
   background-color: #1b1b1b;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-`
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+`;
 
 const Header = () => {
   return (
@@ -24,7 +26,7 @@ const Header = () => {
       <Logo />
       <Menu />
     </StyledHeader>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Container = styled.section`
   padding: 2% 7%;
@@ -47,15 +47,17 @@ const CardsContainer = styled.div`
 `;
 
 const CardBox = styled.div`
-  background: ${(props) => props.theme.color.secundary || "#fff"};
-  color: ${(props) => props.theme.color.secundary || "#333"};
+  background: ${(props) => props.theme.color.secundary || '#fff'};
+  color: ${(props) => props.theme.color.secundary || '#333'};
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
   border-radius: 10px;
   padding: 20px;
   width: 300px; /* Largura fixa */
   height: 200px; /* Altura fixa para uniformidade */
   text-align: center; /* Centraliza o conteúdo */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
   display: flex;
   flex-direction: column;
@@ -75,7 +77,7 @@ const CardBox = styled.div`
   p {
     font-size: 1rem;
     line-height: 1.5;
-    color: ${(props) => props.theme.color.background || "#555"};
+    color: ${(props) => props.theme.color.background || '#555'};
   }
 `;
 
@@ -98,7 +100,9 @@ const Button = styled.button`
   font-size: 1rem;
   font-weight: 900;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 
   &:hover {
     transform: scale(1.05); /* Leve aumento */
@@ -118,36 +122,44 @@ const Button = styled.button`
 const Card = () => {
   const specialties = [
     {
-      title: "Direito Empresarial",
-      description: "Assessoria para empresas em questões contratuais, societárias e compliance.",
+      title: 'Direito Empresarial',
+      description:
+        'Assessoria para empresas em questões contratuais, societárias e compliance.',
     },
     {
-      title: "Direito Trabalhista",
-      description: "Representação em disputas trabalhistas e consultoria preventiva.",
+      title: 'Direito Trabalhista',
+      description:
+        'Representação em disputas trabalhistas e consultoria preventiva.',
     },
     {
-      title: "Direito Tributário",
-      description: "Orientação em questões fiscais e tributárias, incluindo planejamento e defesa administrativa.",
+      title: 'Direito Tributário',
+      description:
+        'Orientação em questões fiscais e tributárias, incluindo planejamento e defesa administrativa.',
     },
     {
-      title: "Direito Imobiliário",
-      description: "Consultoria em transações imobiliárias, regularização de imóveis e resolução de litígios.",
+      title: 'Direito Imobiliário',
+      description:
+        'Consultoria em transações imobiliárias, regularização de imóveis e resolução de litígios.',
     },
     {
-      title: "Direito de Família",
-      description: "Atuação em divórcios, guarda, pensão alimentícia e questões relacionadas a sucessões.",
+      title: 'Direito de Família',
+      description:
+        'Atuação em divórcios, guarda, pensão alimentícia e questões relacionadas a sucessões.',
     },
     {
-      title: "Direito Ambiental",
-      description: "Consultoria e defesa em questões envolvendo legislação ambiental e sustentabilidade.",
+      title: 'Direito Ambiental',
+      description:
+        'Consultoria e defesa em questões envolvendo legislação ambiental e sustentabilidade.',
     },
     {
-      title: "Direito Penal",
-      description: "Defesa em processos criminais, assessoria em inquéritos e ações judiciais.",
+      title: 'Direito Penal',
+      description:
+        'Defesa em processos criminais, assessoria em inquéritos e ações judiciais.',
     },
     {
-      title: "Direito Digital",
-      description: "Atuação em questões de privacidade, proteção de dados e crimes cibernéticos.",
+      title: 'Direito Digital',
+      description:
+        'Atuação em questões de privacidade, proteção de dados e crimes cibernéticos.',
     },
   ];
 
@@ -165,7 +177,9 @@ const Card = () => {
         </CardsContainer>
       </Header>
       <ButtonWrapper>
-        <Button onClick={() => window.location.href = "https://wa.me/5511999999999"}>
+        <Button
+          onClick={() => (window.location.href = 'https://wa.me/5511999999999')}
+        >
           Falar com Especialistas
         </Button>
       </ButtonWrapper>
