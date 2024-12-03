@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
 import { IoLogoWhatsapp } from "react-icons/io5"
+import { Link } from "react-router-dom"
 
 const Container = styled.section`
   padding: 2% 7%;
@@ -148,7 +149,10 @@ const Section = () => {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </Content>
-        <StyledButton>Saiba mais</StyledButton>
+        <Link to="/about">
+          <StyledButton>Saiba mais</StyledButton>
+
+        </Link>
       </ContentContainer>
       <PerfilContainer>
         <div>
