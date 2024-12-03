@@ -1,8 +1,10 @@
 import styled from "styled-components"
-import perfil from "../../assets/vitor-perfil.png"
+import vitorPerfil from "../../assets/pictures/vitor-sentado.jpg"
+import pedroPerfil from "../../assets/pictures/pedro-sentado.jpg"
 import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
+import { IoLogoWhatsapp } from "react-icons/io5"
 
 const Container = styled.section`
   padding: 2% 7%;
@@ -85,7 +87,7 @@ const PerfilContainer = styled.div`
   margin-top: 30px;
 
   img {
-    width: 75%;
+    width: 65%;
 
     @media(max-width: 1023px) {
       width: 60%;
@@ -137,7 +139,7 @@ const Section = () => {
       <ContentContainer>
         <Content>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
+          industry. Lorem Ipsum has been standard dummy text
           ever since the 1500s, when an unknown printer took a galley of type
           and scrambled it to make a type specimen book. It has survived not
           only five centuries, but also the leap into electronic typesetting,
@@ -150,27 +152,29 @@ const Section = () => {
       </ContentContainer>
       <PerfilContainer>
         <div>
-          <img src={perfil} alt={"perfil"} />
+          <img src={pedroPerfil} alt={"perfil"} />
           <h3>Pedro <strong>Resende</strong></h3>
-          <p>Advogado | OAB [número da OAB]
+          <p>Advogado | OAB/MG 153.323
             Especialista em Direito Empresarial,
             Contratos e Soluções Jurídicas para Pequenas e Médias Empresas</p>
           <SocialLinks>
             <a><MdOutlineEmail size={24} /></a>
             <a><FaInstagram size={24} /></a>
             <a><FaLinkedinIn size={24} /></a>
+            <a><IoLogoWhatsapp size={24} /></a>
           </SocialLinks>
         </div>
         <div>
-          <img src={perfil} alt={"perfil"} />
+          <img src={vitorPerfil} alt={"perfil"} />
           <h3>Vitor <strong>Fernandes</strong></h3>
-          <p>Advogado | OAB [número da OAB]
+          <p>Advogado | OAB/MG 198.803
             Especialista em Direito Empresarial,
             Contratos e Soluções Jurídicas para Pequenas e Médias Empresas</p>
           <SocialLinks>
             <a><MdOutlineEmail size={24} /></a>
             <a><FaInstagram size={24} /></a>
             <a><FaLinkedinIn size={24} /></a>
+            <a><IoLogoWhatsapp size={24} /></a>
           </SocialLinks>
         </div>
       </PerfilContainer>

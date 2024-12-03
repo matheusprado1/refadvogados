@@ -1,18 +1,23 @@
 import styled from 'styled-components';
-import logoDesktop from '../../assets/logo-desktop.png'
-import logoMobile from '../../assets/logo-mobile.png'
+import logoDesktop from '../../assets/logo/logo-desktop.png'
+import logoMobile from '../../assets/logo/logo-mobile.png'
+import { Link } from 'react-router-dom';
 
 const StyledImg = styled.img`
-  max-height: 100px;
+  /* max-height: 10p; */
   /* padding-top: 10px; */
+  max-height: 100px;
+  cursor: pointer;
 `;
 
 const Logo = () => {
   return (
-    <picture>
-      <source srcSet={logoMobile} media="(max-width: 768px)" />
-      <StyledImg src={logoDesktop} alt="Logo" />
-    </picture>
+    <Link to="/">
+      <picture>
+        <source srcSet={logoMobile} media="(max-width: 768px)" />
+        <StyledImg src={logoDesktop} alt="Logo" />
+      </picture>
+    </Link>
   );
 };
 

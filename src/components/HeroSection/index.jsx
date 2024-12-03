@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components"
 import { FaInstagram } from "react-icons/fa"
 import { FaLinkedinIn } from "react-icons/fa"
 import { MdOutlineEmail } from "react-icons/md"
-import heroBanner from "../../assets/hero-banner.png"
+import heroBanner from "../../assets/banner/justice.png"
 
 const slideIn = keyframes`
   from {

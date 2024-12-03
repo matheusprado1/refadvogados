@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { TiThMenu } from "react-icons/ti"
 import { IoCloseSharp } from "react-icons/io5"
@@ -94,9 +95,9 @@ const Menu = () => {
         {menuIsOpen ? <IoCloseSharp color="white" size="28" /> : <TiThMenu color="white" size="28" />}
       </ContentMobile>
       {menuIsOpen || window.innerWidth > 1023 ? <ul>
-        <li><a href="#">Nosso escritório</a></li>
-        <li><a href="#">Especialidades</a></li>
-        <li><a href="#">Fale conosco</a></li>
+        <li><Link to="/about">Nosso escritório</Link></li>
+        <li><Link to="#">Especialidades</Link></li>
+        <li><Link to="#">Fale conosco</Link></li>
       </ul> : <></>}
     </Container>
   )
