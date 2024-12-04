@@ -15,12 +15,16 @@ const Container = styled.nav`
     align-items: flex-start;
     padding: 10px;
     gap: 2rem;
-
-    flex-direction: ${(props) => (props.isOpen ? 'column' : 'row')};
+/* 
+    flex-direction: ${(props) => (props.isOpen ? 'column' : 'row')}; */
   }
 
   li {
     list-style-type: none;
+  :hover {
+    color: ${(props) => props.theme.color.secundary};
+    text-decoration: underline;
+    }
   }
 
   a {
@@ -29,10 +33,7 @@ const Container = styled.nav`
     cursor: pointer;
     font-weight: 700;
   }
-  :hover {
-    color: ${(props) => props.theme.color.secundary};
-    text-decoration: underline;
-  }
+
 
   @media (max-width: 1023px) {
     display: flex;

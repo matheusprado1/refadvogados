@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import logoDesktop from '../../assets/logo/logo-desktop.png';
+import logoDesktop from '../../assets/logo/logo-desktop.svg';
 import logoMobile from '../../assets/logo/logo-mobile.png';
 import { Link } from 'react-router-dom';
 
