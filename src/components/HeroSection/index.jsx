@@ -3,6 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import heroBanner from '../../assets/banner/justice.png';
+// import heroSection from '../../assets/banner/hero-section.jpg';
 
 const slideIn = keyframes`
   from {
@@ -22,10 +23,11 @@ const Container = styled.div`
   /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
   color: #fff;
 
+
   @media (max-width: 1023px) {
     /* padding: 5%; */
     /* margin-top: 0; */
-    height: auto;
+    /* height: auto; */
   }
 `;
 
@@ -135,6 +137,25 @@ const SocialLinks = styled.ul`
   }
 `;
 
+// const WhatsAppButton = styled.a`
+//   display: inline-block;
+//   margin: 20px auto;
+//   padding: 10px 20px;
+//   background-color: ${(props) => props.theme.color.secundary};
+//   color: white;
+//   text-decoration: none;
+//   font-size: 1.2rem;
+//   font-weight: bold;
+//   border-radius: 5px;
+//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//   text-align: center;
+//   transition: background-color 0.3s;
+
+//   &:hover {
+//     opacity: 0.5;
+//   }  
+//   `;
+
 const HeroSection = () => {
   return (
     <Container>
@@ -177,7 +198,15 @@ const HeroSection = () => {
               </a>
             </li>
           </SocialLinks>
+          {/* <WhatsAppButton
+            href="https://wa.me/+5534988996340?text=Olá! Gostaria de saber mais sobre os serviços do escritório."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Fale Conosco
+          </WhatsAppButton> */}
         </GridItem1>
+
 
         <GridItem2>
           <img src={heroBanner} alt="Hero Banner" />

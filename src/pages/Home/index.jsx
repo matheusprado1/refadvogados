@@ -15,7 +15,7 @@ import ContactForm from '../../components/ContactForm';
 // `
 const Divider = styled.div`
   width: 100%;
-  height: 5px;
+  height: 2px;
   background-color: ${(props) => props.theme.color.secundary};
   margin: 20px 0;
 `;

@@ -149,7 +149,7 @@ const Section = () => {
       </ContentContainer>
       <PerfilContainer>
         <div>
-          <img src={pedroPerfil} alt={'perfil'} />
+          <img src={pedroPerfil} alt={'perfil'} loading='lazy' />
           <h3>
             Pedro <strong>Resende</strong>
           </h3>
@@ -173,7 +173,7 @@ const Section = () => {
           </SocialLinks>
         </div>
         <div>
-          <img src={vitorPerfil} alt={'perfil'} />
+          <img src={vitorPerfil} alt={'perfil'} loading='lazy' />
           <h3>
             Vitor <strong>Fernandes</strong>
           </h3>

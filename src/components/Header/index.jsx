@@ -4,6 +4,7 @@ import Menu from '../Menu';
 
 const StyledHeader = styled.header`
   width: 100%;
+  /* height: 15%; */
   position: fixed;
   top: 0;
   left: 0;

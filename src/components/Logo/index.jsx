@@ -6,9 +6,23 @@ import { Link } from 'react-router-dom';
 const StyledImg = styled.img`
   /* max-height: 10p; */
   /* padding-top: 10px; */
-  max-height: 100px;
+  max-height: 95px;
+  /* width: 600px; */
+  /* width: 600px; */
+
   cursor: pointer;
+
+  @media(max-width: 768px) {
+    width: auto;
+  }
 `;
+
+// const StyledImg1 = styled.img`
+//   /* max-height: 10p; */
+//   /* padding-top: 10px; */
+//   max-height: 75px;
+//   cursor: pointer;
+// `;
 
 const Logo = () => {
   return (
@@ -16,6 +30,7 @@ const Logo = () => {
       <picture>
         <source srcSet={logoMobile} media="(max-width: 768px)" />
         <StyledImg src={logoDesktop} alt="Logo" />
+        {/* <StyledImg1 src={logo} alt="Logo" /> */}
       </picture>
     </Link>
   );
