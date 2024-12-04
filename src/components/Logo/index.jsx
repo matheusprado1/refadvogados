@@ -29,7 +29,7 @@ const Logo = () => {
     <Link to="/">
       <picture>
         <source srcSet={logoMobile} media="(max-width: 768px)" />
-        <StyledImg src={logoDesktop} alt="Logo" />
+        <StyledImg src={logoMobile} alt="Logo" />
         {/* <StyledImg1 src={logo} alt="Logo" /> */}
       </picture>
     </Link>
