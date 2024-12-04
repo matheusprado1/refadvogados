@@ -27,7 +27,7 @@ const Container = styled.div`
 
 
   @media (max-width: 1023px) {
-    padding: 20% 5%;
+    padding: 0 5%;
     /* margin-top: 0; */
     /* height: auto; */
   }
@@ -46,7 +46,7 @@ const GridContainer = styled.div`
     flex-direction: column-reverse;
     /* gap: 20px; */
     /* margin-top: 120px; */
-    gap: 10%;
+    gap: 7%;
   }
 `;
 
