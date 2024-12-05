@@ -26,7 +26,7 @@ const Home = () => {
       <SectionWrapper bgColor="#1B1B1B" borderColor="#FFFFFF">
         <ContactForm />
       </SectionWrapper>
-      <SectionWrapper bgColor="#000000" borderColor="#D9D2A6">
+      <SectionWrapper bgColor="#D9D2A6" borderColor="#D9D2A6">
         <Map />
       </SectionWrapper>
     </>

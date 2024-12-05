@@ -2,7 +2,6 @@ import styled, { keyframes } from 'styled-components';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
-import heroBanner from '../../assets/banner/justice.png';
 import completaVertical from '../../assets/logo/vertical.png'
 // import heroSection from '../../assets/banner/hero-section.jpg';
 import { IoLogoWhatsapp } from 'react-icons/io5';
@@ -40,14 +39,17 @@ const GridContainer = styled.div`
   height: 100%;
   gap: 15%;
 
+
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column-reverse;
     /* gap: 20px; */
     /* margin-top: 120px; */
-    gap: 7%;
+    gap: 15px;
+    height: 93vh;
   }
+
 `;
 
 const GridItem1 = styled.div`
@@ -67,26 +69,17 @@ const GridItem1 = styled.div`
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.2;
-    color: ${(props) => props.theme.color.primary || '#fff'};
+    color: ${(props) => props.theme.color.primary};
     text-align: left;
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: ${(props) => props.theme.color.secundary || '#d4d4d4'};
+    color: ${(props) => props.theme.color.secundary};
     text-align: left;
   }
 
-  /* ul {
-      background-color: #1b1b1b;
-      height: 50px;
-      display: flex;
-      list-style: none;
-      justify-content: space-around;
-      align-items: center;
-         
-  } */
   @media (max-width: 1023px) {
     h2 {
       font-size: 1.5rem;
@@ -140,7 +133,7 @@ const SocialLinks = styled.ul`
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: ${(props) => props.theme.color.secundary || '#fff'};
+        background-color: ${(props) => props.theme.color.secundary};
       }
     }
   }
@@ -152,8 +145,8 @@ const WhatsAppButton = styled.a`
   justify-content: center;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: ${(props) => props.theme.color.secundary || '#D9D2A6'};
-  color: ${(props) => props.theme.color.primary || '#1B1B1B'};
+  background-color: ${(props) => props.theme.color.secundary};
+  color: ${(props) => props.theme.color.primary};
   font-size: 1rem;
   font-weight: bold;
   text-decoration: none;

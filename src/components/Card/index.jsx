@@ -77,7 +77,7 @@ const CardBox = styled.div`
   p {
     font-size: 1rem;
     line-height: 1.5;
-    color: ${(props) => props.theme.color.background || '#555'};
+    color: #555;
   }
 `;
 

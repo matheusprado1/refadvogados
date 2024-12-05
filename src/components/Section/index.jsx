@@ -10,12 +10,12 @@ import { Link } from 'react-router-dom';
 const Container = styled.section`
   padding: 2% 7%;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Duas colunas */
-  grid-template-rows: auto auto; /* Título/conteúdo + imagens */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas:
     'title content'
-    'images images'; /* Imagens ocupam toda a largura */
-  gap: 20px; /* Espaçamento entre os elementos */
+    'images images';
+  gap: 20px;
   line-height: 1.8;
 
   @media (max-width: 1023px) {
@@ -29,7 +29,23 @@ const Container = styled.section`
 const Title = styled.h3`
   grid-area: title;
   font-size: ${(props) => props.theme.font.bigger};
+  text-align: left;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    margin: 0px 10px 0; 
+    width: 20%;
+    height: 2px; 
+    background-color: ${(props) => props.theme.color.secundary || '#000'};
+
+    @media(max-width: 1023px) {
+      width: 90%;
+    }
+  }
 `;
+
 
 const ContentContainer = styled.div`
   grid-area: content;
@@ -47,25 +63,25 @@ const Content = styled.p`
 `;
 
 const StyledButton = styled.button`
-  width: ${(props) => props.width || '200px'};
-  height: ${(props) => props.height || '50px'};
-  margin-top: ${(props) => props.marginTop || '20px'};
-  padding: ${(props) => props.padding || '2%'};
-  background-color: ${(props) => props.theme.color.secundary || '#007BFF'};
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  padding: 2%;
+  background-color: ${(props) => props.theme.color.secundary};
   color: #000;
-  border: ${(props) => props.border || 'none'};
-  font-size: ${(props) => props.fontSize || '16px'};
-  font-weight: ${(props) => props.fontWeight || 'bold'};
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
-    color: ${(props) => props.hoverColor || 'white'};
-    transform: scale(1.05); /* Pequeno efeito de aumento */
+    color: ${(props) => props.theme.color.primary};;
+    transform: scale(1.05);
   }
 
   &:active {
-    transform: scale(0.95); /* Diminui ligeiramente ao clicar */
+    transform: scale(0.95);
     opacity: 0.8;
   }
 
@@ -80,8 +96,7 @@ const PerfilContainer = styled.div`
   grid-area: images;
   display: flex;
   justify-content: space-around;
-  /* Centraliza verticalmente */
-  gap: 20px; /* Espaçamento entre as imagens */
+  gap: 20px;
   margin-top: 30px;
 
   img {

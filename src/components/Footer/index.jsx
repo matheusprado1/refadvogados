@@ -3,7 +3,7 @@ import Logo from '../Logo';
 
 const Container = styled.footer`
   background-color: #1b1b1b;
-  color: ${(props) => props.theme.color.text || '#fff'};
+  color: #fff;
   text-align: center;
   padding: 1% 7%;
   font-size: 0.9rem;
@@ -13,7 +13,7 @@ const Container = styled.footer`
   align-items: center;
 
   a {
-    color: ${(props) => props.theme.color.highlight || '#0077b6'};
+    color: #0077b6;
     text-decoration: none;
 
     &:hover {
@@ -31,7 +31,7 @@ const Footer = () => {
           advogados. Todos os direitos reservados.
         </p>
         <p>
-          Feito com ❤️ por{' '}
+          Feito com 🖤 por{' '}
           <a
             href="https://www.linkedin.com/in/matheus-prado-de-oliveira/"
             target="_blank"
