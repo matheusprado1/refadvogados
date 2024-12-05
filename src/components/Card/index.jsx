@@ -47,7 +47,7 @@ const CardsContainer = styled.div`
 `;
 
 const CardBox = styled.div`
-  background: ${(props) => props.theme.color.secundary || '#fff'};
+  background: ${(props) => props.theme.color.secundary};
   color: ${(props) => props.theme.color.secundary || '#333'};
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
   border-radius: 10px;
