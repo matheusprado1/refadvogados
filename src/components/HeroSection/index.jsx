@@ -43,11 +43,12 @@ const GridContainer = styled.div`
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     /* gap: 20px; */
     /* margin-top: 120px; */
-    gap: 15px;
-    height: 93vh;
+    gap: 30px;
+    height: 100vh;
+    margin-top: 20%;
   }
 
 `;

@@ -107,7 +107,7 @@ const Menu = () => {
             <Link to="#">Especialidades</Link>
           </li>
           <li>
-            <Link to="#">Fale conosco</Link>
+            <Link to="/contact">Fale conosco</Link>
           </li>
         </ul>
       ) : (

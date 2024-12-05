@@ -27,7 +27,9 @@ const Home = () => {
         <ContactForm />
       </SectionWrapper>
       <SectionWrapper bgColor="#D9D2A6" borderColor="#D9D2A6">
-        <Map />
+        <Map
+          title={"Nossa Localização"}
+        />
       </SectionWrapper>
     </>
   );

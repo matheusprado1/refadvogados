@@ -38,7 +38,7 @@ const Container = styled.form`
   }
 `;
 
-const ContactForm = () => {
+const ContactForm = ({ title = 'Fale conosco', description = 'Preencha o formulário e entraremos em contato o mais rápido possível!' }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -58,9 +58,9 @@ const ContactForm = () => {
 
   return (
     <Container onSubmit={handleSubmit}>
-      <h2>Fale conosco</h2>
+      <h2>{title}</h2>
       <p>
-        Preencha o formulário e entraremos em contato o mais rápido possível!
+        {description}
       </p>
       <div>
         <label>Nome:</label>
