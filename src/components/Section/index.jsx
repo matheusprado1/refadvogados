@@ -148,15 +148,7 @@ const Section = () => {
       <Title>Quem somos ?</Title>
       <ContentContainer>
         <Content>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been standard dummy text ever since the
-          1500s, when an unknown printer took a galley of type and scrambled it
-          to make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
+          Resende & Fernandes Sociedade de Advogados, registrado na OAB/MG sob o n. 15736, é um escritório de advocacia com sede na cidade de Araguari – Minas Gerais. Nossa equipe é composta por profissionais altamente qualificados, preparados para oferecer soluções jurídicas personalizadas e estratégicas, sempre focando nos melhores resultados para nossos clientes e parceiros. Nosso foco está em Direito Cível, Direito Trabalhista e Direito Previdenciário, com especial atenção a pessoas físicas, pequenas empresas e profissionais liberais. A experiência acumulada em negociações, litígios e consultoria jurídica nos permite atuar com eficiência, proporcionando segurança e clareza em cada decisão.
         </Content>
         <Link to="/about">
           <StyledButton>Saiba mais</StyledButton>

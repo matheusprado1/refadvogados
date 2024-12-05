@@ -94,7 +94,7 @@ const About = () => {
     <Container>
       <Title>Nosso Escritório</Title>
       <Description>
-        Resende & Fernandes Sociedade de Advogados, registrado na OAB/MG sob o n. [n OAB], é um escritório de advocacia com sede na cidade de Araguari – Minas Gerais. Nossa equipe é composta por profissionais altamente qualificados, preparados para oferecer soluções jurídicas personalizadas e estratégicas, sempre focando nos melhores resultados para nossos clientes e parceiros.
+        Resende & Fernandes Sociedade de Advogados, registrado na OAB/MG sob o n. 15736, é um escritório de advocacia com sede na cidade de Araguari – Minas Gerais. Nossa equipe é composta por profissionais altamente qualificados, preparados para oferecer soluções jurídicas personalizadas e estratégicas, sempre focando nos melhores resultados para nossos clientes e parceiros.
 
         Nosso foco está em Direito Cível, Direito Trabalhista e Direito Previdenciário, com especial atenção a pessoas físicas, pequenas empresas e profissionais liberais. A experiência acumulada em negociações, litígios e consultoria jurídica nos permite atuar com eficiência, proporcionando segurança e clareza em cada decisão.
         <br />
