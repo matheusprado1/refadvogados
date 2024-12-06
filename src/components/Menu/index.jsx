@@ -10,14 +10,12 @@ const Container = styled.nav`
   padding: 0;
 
   ul {
-    display: flex;
-    list-style: none;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 2rem;
-/* 
-    flex-direction: ${(props) => (props.isOpen ? 'column' : 'row')}; */
-  }
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
   li {
     list-style-type: none;

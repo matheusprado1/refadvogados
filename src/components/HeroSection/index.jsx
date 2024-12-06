@@ -48,7 +48,7 @@ const Container = styled.div`
 
 @media (max-width: 1023px) {
   padding: 0 5%;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   }
 `;
 
@@ -71,12 +71,12 @@ const GridContainer = styled.div`
   }
 
   @media (max-width: 420px) {
-   gap: 10%;
-  }
-
-  @media (max-width: 319px) {
    gap: 5%;
   }
+
+  /* @media (max-width: 319px) {
+   gap: 5%;
+  } */
 
 `;
 
@@ -90,6 +90,7 @@ const GridItem1 = styled.div`
 
   @media (max-width: 1023px) {
     margin-top: 0;
+    margin-bottom: 20px;
 
   }
 
