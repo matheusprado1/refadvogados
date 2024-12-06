@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Logo from '../Logo';
 import Menu from '../Menu';
+import { useState, useEffect } from 'react';
+
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -15,16 +17,33 @@ const StyledHeader = styled.header`
   justify-content: space-between;
   max-width: 100%;
   padding: 1% 7%;
-  background-color: #1b1b1b;
-  box-shadow:
-    rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+  transition: background-color 0.3s ease;
+  @media(max-width: 1023px) {
+
+  }
+  &.scrolled {
+    background-color: #1B1B1B;
+  }
 `;
 
 const Header = () => {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) setScrolled(true);
+      else setScrolled(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
   return (
-    <StyledHeader>
+    <StyledHeader className={scrolled ? 'scrolled' : ''}>
       <Logo />
       <Menu />
     </StyledHeader>
