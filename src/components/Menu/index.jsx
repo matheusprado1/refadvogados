@@ -43,7 +43,7 @@ const Container = styled.nav`
     ul {
       flex-direction: column;
       position: absolute;
-      top: 7rem;
+      top: 4rem;
       left: 0px;
       padding: 1% 7%;
       width: 100%;

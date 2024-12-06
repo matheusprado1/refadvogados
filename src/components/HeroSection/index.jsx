@@ -29,6 +29,8 @@ const Container = styled.div`
     padding: 0 5%;
     /* margin-top: 0; */
     /* height: auto; */
+    margin-bottom: 30px;
+
   }
 `;
 
@@ -39,16 +41,23 @@ const GridContainer = styled.div`
   height: 100%;
   gap: 15%;
 
-
+  
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     /* gap: 20px; */
     /* margin-top: 120px; */
-    gap: 30px;
     height: 100vh;
-    margin-top: 20%;
+    /* gap: 30px; */
+  }
+
+  @media (max-width: 420px) {
+   gap: 10%;
+  }
+
+  @media (max-width: 319px) {
+   gap: 5%;
   }
 
 `;
