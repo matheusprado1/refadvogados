@@ -4,6 +4,7 @@ import Section from '../../components/Section';
 import Card from '../../components/Card';
 import Map from '../../components/Map';
 import ContactForm from '../../components/ContactForm';
+import Reviews from '../../components/Review';
 
 
 const SectionWrapper = styled.div`
@@ -17,7 +18,7 @@ const Home = () => {
   return (
     <>
       <HeroSection />
-      <SectionWrapper bgColor="#FFFFFF" borderColor="#D9D2A6">
+      <SectionWrapper bgColor="#FFFF" borderColor="#FFFF">
         <Section />
       </SectionWrapper>
       <SectionWrapper bgColor="#D9D2A6" borderColor="#000000">
@@ -25,6 +26,9 @@ const Home = () => {
       </SectionWrapper>
       <SectionWrapper bgColor="#1B1B1B" borderColor="#FFFFFF">
         <ContactForm />
+      </SectionWrapper>
+      <SectionWrapper bgColor="#FFFFFF" borderColor="#D9D2A6">
+        <Reviews />
       </SectionWrapper>
       <SectionWrapper bgColor="#D9D2A6" borderColor="#D9D2A6">
         <Map

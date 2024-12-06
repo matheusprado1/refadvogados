@@ -23,14 +23,31 @@ const Container = styled.div`
   padding: 2% 7%;
   /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
   color: #fff;
+  background: url('src/assets/banner/texture1.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative; /* Necessário para o uso do ::before */
 
+/* Overlay escuro */
+&::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Cor preta com opacidade de 60% */
+  z-index: 1; /* Coloca o overlay atrás do conteúdo */
+}
 
-  @media (max-width: 1023px) {
-    padding: 0 5%;
-    /* margin-top: 0; */
-    /* height: auto; */
-    margin-bottom: 30px;
+/* Para o conteúdo */
+> * {
+  position: relative;
+  z-index: 2; /* Garante que os elementos do conteúdo fiquem acima do overlay */
+}
 
+@media (max-width: 1023px) {
+  padding: 0 5%;
+  margin-bottom: 30px;
   }
 `;
 
