@@ -5,6 +5,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import completaVertical from '../../assets/logo/vertical.png'
 // import heroSection from '../../assets/banner/hero-section.jpg';
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import texture from '../../assets/banner/texture1.jpg';
 
 const slideIn = keyframes`
   from {
@@ -23,7 +24,7 @@ const Container = styled.div`
   padding: 2% 7%;
   /* background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); */
   color: #fff;
-  background: url('src/assets/banner/texture1.jpg') no-repeat center center;
+  background: url(${texture}) no-repeat center center;
   background-size: cover;
   position: relative; /* Necessário para o uso do ::before */
 
