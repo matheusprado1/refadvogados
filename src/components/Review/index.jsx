@@ -55,7 +55,7 @@ const ReviewCard = styled.div`
 `;
 
 const Reviews = () => {
-  // Dados de exemplo (você pode substituir por dados dinâmicos ou de uma API)
+
   const reviews = [
     {
       name: "João Silva",

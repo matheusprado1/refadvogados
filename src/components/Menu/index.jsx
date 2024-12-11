@@ -102,7 +102,7 @@ const Menu = () => {
             <Link to="/about">Nosso escritório</Link>
           </li>
           <li>
-            <Link to="#">Especialidades</Link>
+            <Link to="/specialties">Especialidades</Link>
           </li>
           <li>
             <Link to="/contact">Fale conosco</Link>
