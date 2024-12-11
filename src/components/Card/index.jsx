@@ -1,83 +1,66 @@
-import styled from 'styled-components';
+import styled from "styled-components";
+import { FaBalanceScale, FaGavel, FaFileContract, FaBuilding, FaLeaf, FaLaptopCode } from "react-icons/fa";
 
 const Container = styled.section`
-  padding: 2% 7%;
+  padding: 1% 7%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: center;
+  gap: 40px;
 
-  @media (max-width: 1023px) {
-    align-items: center;
+  h2 {
+    font-size: 2rem;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Cards mais largos */
+    gap: 30px; /* Maior espaçamento entre os cards */
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @media(max-width: 1023px) {
+    div {
+
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
   }
 `;
 
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 50px;
-
-  @media (max-width: 1023px) {
-    flex-direction: column;
-    align-items: center;
-  }
-`;
-
-const Title = styled.h2`
-  font-size: 2rem;
-  text-align: left;
-  color: ${(props) => props.theme.color.primary};
-  margin-bottom: 20px;
-
-  @media (max-width: 1023px) {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-`;
-
-const CardsContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap; /* Para responsividade */
-  gap: 20px;
-  justify-content: flex-start; /* Alinha os cards à direita */
-
-  @media (max-width: 1023px) {
-    justify-content: center; /* Centraliza em telas menores */
-  }
-`;
-
-const CardBox = styled.div`
-  background: ${(props) => props.theme.color.secundary};
-  color: ${(props) => props.theme.color.secundary || '#333'};
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px; /* Largura fixa */
-  height: 200px; /* Altura fixa para uniformidade */
-  text-align: center; /* Centraliza o conteúdo */
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-
+const Card = styled.div`
+  background: #1B1B1B;
+  color: #FFFFFF;
+  padding: 30px; /* Mais espaçamento interno */
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-10px); /* Efeito de elevação */
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  svg {
+    font-size: 3rem; /* Ícones maiores */
+    color: #D9D2A6;
+    margin-bottom: 20px;
   }
 
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: ${(props) => props.theme.color.primary};
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin-bottom: 15px;
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #555;
+    font-size: 1rem; /* Texto mais legível */
+    color: #D9D2A6;
+    line-height: 1.6;
   }
 `;
 
@@ -119,63 +102,53 @@ const Button = styled.button`
   }
 `;
 
-const Card = () => {
+const Specialties = () => {
   const specialties = [
     {
-      title: 'Direito Empresarial',
-      description:
-        'Assessoria para empresas em questões contratuais, societárias e compliance.',
+      icon: <FaBalanceScale />,
+      title: "Direito Civil",
+      description: "Atuamos em ações relacionadas a contratos, obrigações e direito de família.",
     },
     {
-      title: 'Direito Trabalhista',
-      description:
-        'Representação em disputas trabalhistas e consultoria preventiva.',
+      icon: <FaGavel />,
+      title: "Direito Penal",
+      description: "Defendemos os interesses de nossos clientes em processos criminais.",
     },
     {
-      title: 'Direito Tributário',
-      description:
-        'Orientação em questões fiscais e tributárias, incluindo planejamento e defesa administrativa.',
+      icon: <FaFileContract />,
+      title: "Direito Contratual",
+      description: "Elaboração, revisão e análise de contratos empresariais e pessoais.",
     },
     {
-      title: 'Direito Imobiliário',
-      description:
-        'Consultoria em transações imobiliárias, regularização de imóveis e resolução de litígios.',
+      icon: <FaBuilding />,
+      title: "Direito Imobiliário",
+      description: "Consultoria em transações imobiliárias e regularização de imóveis.",
     },
     {
-      title: 'Direito de Família',
-      description:
-        'Atuação em divórcios, guarda, pensão alimentícia e questões relacionadas a sucessões.',
+      icon: <FaLeaf />,
+      title: "Direito Ambiental",
+      description: "Defesa em questões de legislação ambiental e sustentabilidade.",
     },
     {
-      title: 'Direito Ambiental',
-      description:
-        'Consultoria e defesa em questões envolvendo legislação ambiental e sustentabilidade.',
-    },
-    {
-      title: 'Direito Penal',
-      description:
-        'Defesa em processos criminais, assessoria em inquéritos e ações judiciais.',
-    },
-    {
-      title: 'Direito Digital',
-      description:
-        'Atuação em questões de privacidade, proteção de dados e crimes cibernéticos.',
+      icon: <FaLaptopCode />,
+      title: "Direito Digital",
+      description: "Atuação em privacidade, proteção de dados e crimes cibernéticos.",
     },
   ];
 
   return (
     <Container>
-      <Header>
-        <Title>Especialidades</Title>
-        <CardsContainer>
-          {specialties.map((item, index) => (
-            <CardBox key={index}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </CardBox>
-          ))}
-        </CardsContainer>
-      </Header>
+      <h2>Especialidades</h2>
+      <div>
+        {specialties.map((item, index) => (
+          <Card key={index}>
+            {item.icon}
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
+          </Card>
+
+        ))}
+      </div>
       <ButtonWrapper>
         <Button
           onClick={() => (window.location.href = 'https://wa.me/5511999999999')}
@@ -187,4 +160,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Specialties;
