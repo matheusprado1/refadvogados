@@ -25,6 +25,10 @@ const StyledHeader = styled.header`
   &.scrolled {
     background-color: #1B1B1B;
   }
+
+  @media(max-width: 1023px){
+    background-color: #1B1B1B;
+  }
 `;
 
 const Header = () => {
