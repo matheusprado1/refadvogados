@@ -6,6 +6,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Specialties from './pages/Specialties/Specialties';
 import Contact from './pages/Contact/Contact';
+import WhatsAppButton from './components/WhatsappButton/WhatsappButon';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/specialties" element={<Specialties />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <WhatsAppButton />
       <Footer />
     </Router>
   );
