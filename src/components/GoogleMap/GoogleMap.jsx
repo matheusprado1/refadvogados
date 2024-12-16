@@ -1,32 +1,10 @@
-import styled from 'styled-components';
+import { Container } from './GoogleMap.styles';
 
-const Container = styled.div`
-  padding: 1% 7%;
-  display: flex;
-
-  h2 {
-    font-size: 2rem;
-    width: auto;
-  }
-
-  div {
-    width: 100%;
-    height: 300px;
-    overflow: hidden;
-  }
-
-  @media (max-width: 1023px) {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-
-    div {
-      width: 100%;
-    }
-  }
-`;
-
-const Map = ({ title = "Localização", containerStyles, iframeStyles }) => {
+const GoogleMap = ({
+  title = 'Localização',
+  containerStyles,
+  iframeStyles,
+}) => {
   return (
     <Container style={containerStyles}>
       <h2>{title}</h2>
@@ -46,4 +24,4 @@ const Map = ({ title = "Localização", containerStyles, iframeStyles }) => {
   );
 };
 
-export default Map;
+export default GoogleMap;

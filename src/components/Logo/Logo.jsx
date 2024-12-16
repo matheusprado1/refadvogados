@@ -1,21 +1,6 @@
-import styled from 'styled-components';
-import logoDesktop from '../../assets/logo/logo-desktop.svg';
+import { StyledImg } from './Logo.styles';
 import logoMobile from '../../assets/logo/logo-mobile.png';
 import { Link } from 'react-router-dom';
-
-const StyledImg = styled.img`
-  /* max-height: 10p; */
-  /* padding-top: 10px; */
-  max-height: 100px;
-  /* width: 600px; */
-  /* width: 600px; */
-
-  cursor: pointer;
-
-  @media(max-width: 1023px) {
-    max-height: 50px;
-  }
-`;
 
 // const StyledImg1 = styled.img`
 //   /* max-height: 10p; */
