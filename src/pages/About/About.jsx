@@ -1,85 +1,134 @@
-import {
-  Container,
-  Title,
-  Description,
-  WhatsAppButton,
-  CardContainer,
-} from './About.styles';
-import pedro1 from '../../assets/pictures/pedro-sentado.jpg';
-import pedro2 from '../../assets/pictures/pedro-cruzado.jpg';
-import pedro3 from '../../assets/pictures/pedro-frente.jpg';
+import styled from "styled-components";
+import vitorPhoto from '../../assets/pictures/vitor-frente.jpg';
+import pedroPhoto from '../../assets/pictures/pedro-cruzado.jpg'
 
-import vitor1 from '../../assets/pictures/vitor-frente.jpg';
-import vitor2 from '../../assets/pictures/vitor-lado.jpg';
-import vitor4 from '../../assets/pictures/vitor-sentado.jpg';
+// ESTILOS PRINCIPAIS
+const Container = styled.section`
+  padding: 1% 7%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  color: #FFFFFF;
+  text-align: center;
+`;
 
-// import juntos from '../../assets/pictures/lado-lado.jpg';
+const PageTitle = styled.h1`
+  font-size: 3rem;
+  color: #D9D2A6;
+  margin-bottom: 20px;
+`;
 
-import LawyerCard from '../../components/LawyerCard/LawyerCard';
+const Section = styled.div`
+  display: flex;
+  flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+`;
+
+const Content = styled.div`
+  flex: 1;
+  text-align: left;
+
+  h2 {
+    font-size: 2rem;
+    color: #D9D2A6;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+`;
+
+const Button = styled.a`
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #D9D2A6;
+  color: #1B1B1B;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #FFFFFF;
+    color: #1B1B1B;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+  }
+`;
 
 const About = () => {
   return (
     <Container>
-      <Title>Nosso Escritório</Title>
-      <Description>
-        Resende & Fernandes Sociedade de Advogados, registrado na OAB/MG sob o
-        n. 15736, é um escritório de advocacia com sede na cidade de Araguari –
-        Minas Gerais. Nossa equipe é composta por profissionais altamente
-        qualificados, preparados para oferecer soluções jurídicas personalizadas
-        e estratégicas, sempre focando nos melhores resultados para nossos
-        clientes e parceiros. Nosso foco está em Direito Cível, Direito
-        Trabalhista e Direito Previdenciário, com especial atenção a pessoas
-        físicas, pequenas empresas e profissionais liberais. A experiência
-        acumulada em negociações, litígios e consultoria jurídica nos permite
-        atuar com eficiência, proporcionando segurança e clareza em cada
-        decisão.
-        <br />
-        <br />
-        Nosso diferencial:
-        <br />
-        <br />
-        <ul>
-          <li>
-            Atendimento personalizado e humanizado, entendendo a singularidade
-            de cada cliente.
-          </li>
-          <li>
-            Soluções jurídicas práticas e assertivas, sempre alinhadas aos
-            objetivos estratégicos de quem nos confia seus desafios.
-          </li>
-          <li>
-            Planejamento jurídico inovador e eficaz, com foco em resultados
-            concretos e sustentáveis.
-          </li>
-          <li>
-            Conte conosco para transformar desafios jurídicos em oportunidades,
-            com ética, transparência e excelência!
-          </li>
-        </ul>
-      </Description>
-      <WhatsAppButton
-        href="https://wa.me/+5534988996340?text=Olá! Gostaria de saber mais sobre os serviços do escritório."
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Fale Conosco no WhatsApp
-      </WhatsAppButton>
-      <CardContainer>
-        <LawyerCard
-          name="Pedro Resende"
-          description="Advogado inscrito na OAB/MG sob o nº X.XXX, é especialista em Direito Empresarial e Contratual, com ampla experiência em assessoria jurídica para empresas de diversos portes e segmentos. Sua atuação se destaca pelo profundo conhecimento na estruturação e revisão de contratos, negociações estratégicas e planejamento jurídico voltado para a mitigação de riscos e maximização de oportunidades."
-          images={[pedro1, pedro2, pedro3]}
+      {/* TÍTULO DA PÁGINA */}
+      <PageTitle>Nossos Especialistas</PageTitle>
+
+      {/* SEÇÃO PEDRO RESENDE */}
+      <Section>
+        <img
+          src={pedroPhoto}
+          alt="Pedro Resende"
         />
-        <LawyerCard
-          name="Vitor Fernandes"
-          description="Advogado inscrito na OAB/MG sob o nº X.XXX, é referência em Direito Civil e Trabalhista, atuando com excelência na defesa dos direitos de seus clientes em demandas judiciais e consultorias preventivas. Possui sólida experiência na resolução de conflitos envolvendo contratos, relações de consumo, indenizações e disputas trabalhistas, atendendo tanto pessoas físicas quanto empresas."
-          images={[vitor1, vitor2, vitor4]}
+        <Content>
+          <h2>Dr. Pedro Resende</h2>
+          <h3>Especialista em [Especialidade]</h3>
+          <p>
+            Dr. Pedro Resende é formado pela [universidade]  is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed t
+          </p>
+          <p>
+            Sua habilidade em resolver litígios de forma estratégica e ética o
+            torna um dos advogados mais respeitados na área.
+          </p>
+        </Content>
+      </Section>
+
+      {/* SEÇÃO VITOR FERNANDES */}
+      <Section reverse>
+        <img
+          src={vitorPhoto}
+          alt="Vitor Fernandes"
         />
-      </CardContainer>
-      {/* <TogetherSection>
-        <h2>Juntos, construindo o futuro do Direito</h2>
-        <img src={juntos} alt="Pedro e Vitor juntos" />
-      </TogetherSection> */}
+        <Content>
+          <h2>Dr. Vitor Fernandes</h2>
+          <h3>Especialista em [Especialidade]</h3>
+          <p>
+            Dr. Vitor Fernandes possui graduação pela Universidade
+            Federal de Lavras (UFLA-MG)  is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.
+          </p>
+          <p>
+            Com um olhar atento aos direitos fundamentais, Vitor é reconhecido
+            pela sua firmeza e comprometimento na defesa dos interesses de seus
+            clientes.
+          </p>
+        </Content>
+      </Section>
+
+      {/* BOTÃO FINAL */}
+      <Button href="#contato">Fale com nossos especialistas</Button>
     </Container>
   );
 };

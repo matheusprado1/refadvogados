@@ -1,5 +1,6 @@
 import { Container } from './Footer.styles';
 import Logo from '../Logo/Logo';
+
 const Footer = () => {
   return (
     <Container>

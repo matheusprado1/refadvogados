@@ -20,7 +20,7 @@ const Contact = () => {
             - Rosário
           </p>
           <p>
-            <strong>Telefone:</strong> (XX) XXXXX-XXXX
+            <strong>Telefone:</strong> (34) 98866-9798
           </p>
           <p>
             <strong>E-mail:</strong> email@email.com
@@ -29,10 +29,13 @@ const Contact = () => {
             <strong>Horário de Funcionamento:</strong> Segunda a Sexta: 08h às
             18h
           </p>
+          <p>
+            <strong>Modalidades de Atendimento:</strong> Presencial ou Telepresencial
+          </p>
         </Info>
         <MapFormContainer>
           <StyledForm>
-            <ContactForm title="Duvidas?" />
+            <ContactForm title="Dúvidas?" />
           </StyledForm>
           <StyledMap>
             <GoogleMap

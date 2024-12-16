@@ -54,7 +54,7 @@ const HeroSection = () => {
             </li>
           </SocialLinks>
           <WhatsAppButton
-            href="https://wa.me/+5534988996340?text=Olá! Gostaria de saber mais sobre os serviços do escritório."
+            href="https://wa.me/+5534988669798?text=Olá! Gostaria de saber mais sobre os serviços do escritório."
             target="_blank"
             rel="noopener noreferrer"
           >
