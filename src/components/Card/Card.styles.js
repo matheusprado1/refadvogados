@@ -67,18 +67,13 @@ export const Card = styled.div`
   }
 `;
 
-export const ButtonWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%; /* Garante que ocupe a largura total da seção */
-  margin-top: 20px; /* Espaçamento acima do botão */
-`;
+
 
 export const Button = styled.button`
   background: ${(props) => props.theme.color.secundary}; /* Cor de fundo */
   color: #000; /* Cor do texto */
   padding: 2%;
-  max-width: 300px;
+  width: 500px;
   height: 50px;
   border: none;
   border-radius: 5px;

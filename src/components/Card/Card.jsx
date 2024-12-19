@@ -1,4 +1,4 @@
-import { Container, Card, ButtonWrapper, Button } from './Card.styles';
+import { Container, Card, Button } from './Card.styles';
 import {
   FaBalanceScale,
   FaGavel,
@@ -60,13 +60,11 @@ const Specialties = () => {
           </Card>
         ))}
       </div>
-      <ButtonWrapper>
-        <Button
-          onClick={() => (window.location.href = 'https://wa.me/5511999999999')}
-        >
-          Falar com Especialistas
-        </Button>
-      </ButtonWrapper>
+      <Button
+        onClick={() => (window.location.href = 'https://wa.me/5511999999999')}
+      >
+        Falar com Especialistas
+      </Button>
     </Container>
   );
 };

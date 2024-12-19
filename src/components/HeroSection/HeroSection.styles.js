@@ -51,7 +51,7 @@ export const GridContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   align-items: center;
   height: 100%;
-  gap: 15%;
+  gap: 5%;
 
   @media (max-width: 1023px) {
     grid-template-columns: 1fr;
@@ -59,13 +59,13 @@ export const GridContainer = styled.div`
     flex-direction: column-reverse;
     /* gap: 20px; */
     /* margin-top: 120px; */
-    height: 100vh;
+    height: 90vh;
     /* gap: 30px; */
   }
 
-  @media (max-width: 420px) {
+  /* @media (max-width: 420px) {
     gap: 5%;
-  }
+  } */
 
   /* @media (max-width: 319px) {
    gap: 5%;
@@ -183,5 +183,9 @@ export const WhatsAppButton = styled.a`
 
   svg {
     margin-right: 10px;
+  }
+
+  @media(max-width: 1023px) {
+    display: none;
   }
 `;

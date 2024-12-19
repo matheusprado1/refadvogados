@@ -1,7 +1,6 @@
 import { ButtonContainer } from "./WhatsappButton.styles";
 import { FaWhatsapp } from "react-icons/fa";
 
-
 const WhatsAppButton = () => {
   const phoneNumber = "+5534988669798";
 
