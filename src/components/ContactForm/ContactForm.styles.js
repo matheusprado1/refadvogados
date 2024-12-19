@@ -35,4 +35,8 @@ export const Container = styled.form`
   button:hover {
     opacity: 0.4;
   }
+
+  @media(max-width: 1023px) {
+    padding: 1% 7%;
+  }
 `;
