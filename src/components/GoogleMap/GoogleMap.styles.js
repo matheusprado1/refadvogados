@@ -3,6 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   padding: 1% 7%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 
   h2 {
     font-size: 2rem;

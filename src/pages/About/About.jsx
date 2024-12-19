@@ -127,8 +127,10 @@ const About = () => {
         </Content>
       </Section>
 
-      {/* BOTÃO FINAL */}
-      <Button href="#contato">Fale com nossos especialistas</Button>
+      <Button
+        href="https://wa.me/+5534988669798?text=Olá! Gostaria de saber mais sobre os serviços do escritório."
+        target="_blank"
+        rel="noopener noreferrer">Fale com nossos especialistas</Button>
     </Container>
   );
 };

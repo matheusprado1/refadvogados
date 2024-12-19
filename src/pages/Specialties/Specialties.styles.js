@@ -4,9 +4,13 @@ export const Container = styled.section`
   padding: 2% 7%;
   margin-top: 120px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  align-items: baseline;
-  gap: 80px;
+
+
+  gap: 20px;
 
   h2 {
     font-size: 2rem;
@@ -44,9 +48,9 @@ export const Card = styled.div`
   &:hover {
     transform: ${(props) => (props.expanded ? 'none' : 'translateY(-10px)')};
     box-shadow: ${(props) =>
-      props.expanded
-        ? '0px 8px 16px rgba(0, 0, 0, 0.4)'
-        : '0px 8px 16px rgba(0, 0, 0, 0.4)'};
+    props.expanded
+      ? '0px 8px 16px rgba(0, 0, 0, 0.4)'
+      : '0px 8px 16px rgba(0, 0, 0, 0.4)'};
   }
 
   svg {
