@@ -85,7 +85,7 @@ const About = () => {
   return (
     <Container>
       {/* TÍTULO DA PÁGINA */}
-      <PageTitle>Nossos Especialistas</PageTitle>
+      <PageTitle>Quem somos</PageTitle>
 
       {/* SEÇÃO PEDRO RESENDE */}
       <Section>

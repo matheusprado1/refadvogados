@@ -4,7 +4,7 @@ import Logo from '../Logo/Logo';
 const Footer = () => {
   return (
     <Container>
-      <div>
+      <footer>
         <p>
           © {new Date().getFullYear()} Resende e Fernandes sociedade de
           advogados. Todos os direitos reservados.
@@ -19,7 +19,7 @@ const Footer = () => {
             Matheus Prado Dev
           </a>
         </p>
-      </div>
+      </footer>
       <div>
         <Logo />
       </div>

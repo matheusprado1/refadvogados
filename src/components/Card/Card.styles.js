@@ -70,8 +70,8 @@ export const Card = styled.div`
 
 
 export const Button = styled.button`
-  background: ${(props) => props.theme.color.secundary}; /* Cor de fundo */
-  color: #000; /* Cor do texto */
+  background: ${(props) => props.theme.color.secundary};
+  color: #000;
   padding: 2%;
   width: 500px;
   height: 50px;

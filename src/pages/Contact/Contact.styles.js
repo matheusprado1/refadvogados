@@ -5,7 +5,7 @@ export const Container = styled.section`
   margin-top: 120px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  /* height: 100vh; */
   gap: 50px;
 
   h2 {
