@@ -1,20 +1,10 @@
 import { Container } from './Header.styles';
 import Logo from '../Logo/Logo';
 import Menu from '../Menu/Menu';
-import { useState, useEffect } from 'react';
+import useScrolled from '../../utils/ScrollToTop/Scrolled';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState<boolean>(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) setScrolled(true);
-      else setScrolled(false);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const scrolled = useScrolled(50);
 
   return (
     <Container className={scrolled ? 'scrolled' : ''}>
