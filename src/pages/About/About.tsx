@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import vitorPhoto from '../../assets/pictures/vitor-frente.jpg';
-import pedroPhoto from '../../assets/pictures/pedro-cruzado.jpg'
+import pedroPhoto from '../../assets/pictures/pedro-frente1.jpg'
 
 // ESTILOS PRINCIPAIS
 const Container = styled.section`

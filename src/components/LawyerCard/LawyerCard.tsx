@@ -1,6 +1,12 @@
 import { Container, CarouselStyled } from './LawyerCard.styles';
 
-const LawyerCard = ({ name, description, images }) => (
+interface LawyerCardProps {
+  name: string;
+  description: string;
+  images: string[];
+}
+
+const LawyerCard = ({ name, description, images }: LawyerCardProps) => (
   <Container>
     <h3>{name}</h3>
     <p>{description}</p>

@@ -110,16 +110,20 @@ export const GridItem1 = styled.div`
 export const GridItem2 = styled.div`
   img {
     width: 100%;
+  }
 
-    /* border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); */
-    animation: ${slideIn} 1.2s ease-out;
-
-    &:hover {
+  p {
+    color: #7B7863;
+    text-align: center;
+    
+ 
+  }
+  &:hover {
       transform: scale(1.05);
       transition: transform 0.3s ease;
     }
-  }
+    animation: ${slideIn} 1.2s ease-out;
+
 
   @media (max-width: 1023px) {
     /* grid-column: 1;
