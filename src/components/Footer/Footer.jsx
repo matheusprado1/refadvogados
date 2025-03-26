@@ -9,7 +9,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Resende e Fernandes sociedade de
           advogados. Todos os direitos reservados.
         </p>
-        <p>
+        {/* <p>
           Feito com 🖤 por{' '}
           <a
             href="https://www.linkedin.com/in/matheus-prado-de-oliveira/"
@@ -18,7 +18,7 @@ const Footer = () => {
           >
             Matheus Prado Dev
           </a>
-        </p>
+        </p> */}
       </footer>
       <div>
         <Logo />
