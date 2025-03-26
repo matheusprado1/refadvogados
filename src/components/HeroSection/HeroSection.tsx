@@ -65,6 +65,7 @@ const HeroSection = () => {
 
         <GridItem2>
           <img src={completaVertical} alt="Hero Banner" />
+          <p>OAB/MG n. 15736</p>
         </GridItem2>
       </GridContainer>
     </Container>

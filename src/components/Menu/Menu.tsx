@@ -40,7 +40,7 @@ const Menu = () => {
       {menuIsOpen || window.innerWidth > 1023 ? (
         <ul>
           <li>
-            <Link to="/about">Nosso escritório</Link>
+            <Link to="/about">Quem somos</Link>
           </li>
           <li>
             <Link to="/specialties">Especialidades</Link>

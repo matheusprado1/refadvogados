@@ -9,8 +9,7 @@ import {
 } from './Section.styles';
 import vitorPerfil from '../../assets/pictures/vitor-sentado.jpg';
 import pedroPerfil from '../../assets/pictures/pedro-sentado.jpg';
-import { FaInstagram } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import { IoLogoWhatsapp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
