@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import texture from '../../assets/banner/texture1.jpg';
+import texture from '../../assets/banner/texture1.jpg'
 
 export const slideIn = keyframes`
   from {

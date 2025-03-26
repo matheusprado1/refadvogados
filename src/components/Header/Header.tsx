@@ -4,7 +4,7 @@ import Menu from '../Menu/Menu';
 import { useState, useEffect } from 'react';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
