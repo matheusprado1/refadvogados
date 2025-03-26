@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from './Footer.styles';
 import Logo from '../Logo/Logo';
 

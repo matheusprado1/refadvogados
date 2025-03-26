@@ -22,9 +22,11 @@
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.13.0",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
+    "@types/node": "^22.13.13",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
@@ -32,6 +34,7 @@
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
     "prettier": "^3.4.1",
+    "typescript": "^5.8.2",
     "vite": "^5.4.10"
   }
 }
