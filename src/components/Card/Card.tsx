@@ -61,11 +61,11 @@ const Specialties = () => {
         ))}
       </div>
       <Button
-        onClick={() => (window.location.href = 'https://wa.me/5511999999999')}
+        onClick={() => { window.location.href = `https://wa.me/5534988669798`; }}
       >
         Falar com Especialistas
       </Button>
-    </Container>
+    </Container >
   );
 };
 

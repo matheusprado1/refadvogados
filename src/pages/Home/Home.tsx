@@ -4,6 +4,8 @@ import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
 import GoogleMap from '../../components/GoogleMap/GoogleMap';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import { Info } from '../Contact/Contact.styles';
+import Location from '../../components/Location/Location';
 
 const Home = () => {
   return (
@@ -19,7 +21,8 @@ const Home = () => {
         <ContactForm />
       </SectionWrapper>
       <SectionWrapper bgColor="#D9D2A6" borderColor="#D9D2A6">
-        <GoogleMap title={'Nossa Localização'} />
+        <Location />
+
       </SectionWrapper>
     </>
   );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import vitorPhoto from '../../assets/pictures/vitor-frente.jpg';
-import pedroPhoto from '../../assets/pictures/pedro-frente1.jpg'
+import pedroPhoto from '../../assets/pictures/pedro-frente1.jpg';
 
 // ESTILOS PRINCIPAIS
 const Container = styled.section`
@@ -11,6 +11,8 @@ const Container = styled.section`
   gap: 60px;
   color: #FFFFFF;
   text-align: center;
+  margin-bottom: 50px;
+  
 `;
 
 const PageTitle = styled.h1`
