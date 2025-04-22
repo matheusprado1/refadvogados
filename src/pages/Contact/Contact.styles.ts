@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  padding: 2% 7%;
+  padding: 1% 7%;
   margin-top: 120px;
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+  height: 100vh;
   gap: 50px;
+  width: 100%;
 
   h2 {
     text-align: center;
     font-size: 2rem;
+  }
+
+  @media (max-width: 1023px) {
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+  
+   
   }
 `;
 
@@ -51,7 +58,7 @@ export const MapFormContainer = styled.div`
   & > div,
   iframe {
     flex: 1; /* Faz o formulário e o mapa ocuparem o mesmo espaço */
-    width: 100%;
+    /* width: 500px; */
   }
 `;
 

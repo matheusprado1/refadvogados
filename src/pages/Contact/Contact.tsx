@@ -41,7 +41,10 @@ const Contact = () => {
             <GoogleMap
               title="Venha nos visitar"
               containerStyles={{ flexDirection: 'column' }}
-              iframeStyles={{}}
+              iframeStyles={{
+                width: '100%',
+                height: '300px',
+              }}
             />
           </StyledMap>
         </MapFormContainer>

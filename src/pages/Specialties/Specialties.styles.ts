@@ -32,7 +32,11 @@ export const Container = styled.section`
   }
 `;
 
-export const Card = styled.div`
+interface CardProps {
+  expanded: boolean;
+}
+
+export const Card = styled.div<CardProps>`
   background: #1b1b1b;
   color: #ffffff;
   padding: ${(props) => (props.expanded ? '30px' : '20px')};

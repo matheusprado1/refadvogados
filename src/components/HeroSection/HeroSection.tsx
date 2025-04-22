@@ -27,7 +27,7 @@ const HeroSection = () => {
           <SocialLinks>
             <li>
               <a
-                href="mailto:example@example.com"
+                href="mailto:resendefernandes.advogados@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,7 +45,7 @@ const HeroSection = () => {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com"
+                href="https://www.linkedin.com/company/fernandes-e-resende-advogados-associados/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
