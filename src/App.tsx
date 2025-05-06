@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from './utils/ScrollToTop/ScrollToTop';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -18,6 +18,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/specialties" element={<Specialties />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path='*' element={<Navigate to='/' />} />
       </Routes>
       <WhatsAppButton />
       <Footer />
